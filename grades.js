@@ -16,6 +16,8 @@ function calculate(){
 	if (newv<0 || newv>10){
 		errmsg.innerHTML="Ο αριθμός πρέπει να είναι από 0 έως 10";
 	}
+	else{errmsg.innerHTML="";
+	}
 }
 
 function eleghos(){
