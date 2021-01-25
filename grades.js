@@ -15,7 +15,13 @@ function calculate(){
 	v.value="";
 	if (newv<0 || newv>10){errmsg.innerHTML="Ο αριθμός πρέπει να είναι από 0 έως 10";}
 	else if(isNaN(newv)){errmsg.innerHTML="Πρέπει να δώσεις αριθμό";}
-	else{errmsg.innerHTML="";}
+	else{
+		p++;
+		sum+=newv;
+		errmsg.innerHTML="";
+		plithos.value=p;
+		averg.value=sum/p;
+		}
 }
 
 function eleghos(){
